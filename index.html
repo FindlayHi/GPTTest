@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emerson Ridge Driving Range - the best place to improve your golf game in the Sackville community. Join us and practice your golf swings today!">
+    <meta name="keywords" content="Emerson Ridge Driving Range, golf, driving range, Sackville, practice, swings, improve">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Emerson Ridge Driving Range - Practice Your Golf Swing Today!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Emerson Ridge Driving Range</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+    <main>
+      <img src="img/EmersonRidge_Banner_01.jpg" alt="Hero Image" class="hero-image">
+      <section id="about">
+        <h2>About Us</h2>
+        <p>At Emerson Ridge Driving Range, we're passionate about golf and dedicated to helping our customers improve their game. Our state-of-the-art driving range features top-quality equipment, and our experienced staff is always on hand to offer tips and advice. Whether you're a beginner or an experienced golfer, we're the perfect place to practice your swings and take your golf game to the next level.</p>
+      </section>
+      <section id="location">
+        <h2>Location</h2>
+        <p>We're conveniently located at 342 Beaver Bank Rd, Beaver Bank, NS B4E 1K2 in the heart of the Sackville community. Come visit us today!</p>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var location = {lat: 44.780366, lng: -63.672444};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: location});
+            var marker = new google.maps.Marker({position: location, map: map});
+          }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk48S-pxwHKSCRoFYPZPX2XPqW-6YxAyM&callback=initMap">
+        </script>
+      </section>
+      <section id="hours">
+        <h2>Hours</h2>
+        <ul>
+          <li>Monday: 6:30am - 9pm</li>
+          <li>Tuesday: 6:30am - 9pm</li>
+          <li>Wednesday: 6:30am - 9pm</li>
+          <li>Thursday: 6:30am - 9pm</li>
+          <li>Friday: 6:30am - 9pm</li>
+          <li>Saturday: 6:30am - 9pm</li>
+          <li>Sunday: 6:30am - 9pm</li>
+        </ul>
+</section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: (902) 864-4871</p>
+  <p>A bucket of balls is $14 dollars.</p>
+</section>
+</div>
+</main>
+<footer>
+    Copyright &copy; <script>document.write(new Date().getFullYear())</script> Emerson Ridge Driving Range
+  </footer>
+</body>
+</html>
